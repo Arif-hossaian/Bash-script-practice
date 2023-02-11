@@ -17,7 +17,7 @@ even_odd() {
 }
 
 even_odd $1
-result=$?
+result=$? #The $? variable represents the exit status of the previous command. Exit status is a numerical value returned by every command upon its completion. As a rule, most commands return an exit status of 0 if they were successful, and 1 if they were unsuccessful.
 
 if [ $result -eq 0 ]; then
 echo "Even"
