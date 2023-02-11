@@ -41,3 +41,11 @@ fruties=("apple" "mangoo", "tomato")
 for fruit in "${fruties[@]}"; do
 echo $fruit
 done
+
+
+counter=1
+
+while [ $counter -le 5 ]; do
+  echo $counter
+  ((counter++))
+done
